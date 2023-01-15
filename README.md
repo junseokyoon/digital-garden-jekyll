@@ -3,6 +3,7 @@
 
 
 Below is the original README.md from Max's github.
+
 **I wrote a tutorial explaining how to set it up: [Setting up your own digital garden with Jekyll](https://maximevaillancourt.com/blog/setting-up-your-own-digital-garden-with-jekyll)**
 
 Preview the template here: https://digital-garden-jekyll-template.netlify.app/
