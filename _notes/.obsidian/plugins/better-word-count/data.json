@@ -1,0 +1,11 @@
+{
+  "preset": {
+    "name": "custom",
+    "statusBarQuery": "",
+    "statusBarAltQuery": ""
+  },
+  "statusBarQuery": "w: {word_count}  c: {character_count} dw: {words_today}",
+  "statusBarAltQuery": "",
+  "countComments": true,
+  "collectStats": true
+}

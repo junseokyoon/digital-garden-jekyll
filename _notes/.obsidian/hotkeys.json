@@ -1,0 +1,53 @@
+{
+  "file-explorer:new-file-in-new-pane": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "N"
+    }
+  ],
+  "note-refactor-obsidian:app:extract-selection-first-line": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": "N"
+    }
+  ],
+  "cycle-through-panes:cycle-through-panes": [],
+  "cycle-through-panes:cycle-through-panes-reverse": [],
+  "obsidian-excalidraw-plugin:insert-link-to-element": [
+    {
+      "modifiers": [
+        "Alt",
+        "Ctrl",
+        "Shift"
+      ],
+      "key": "K"
+    }
+  ],
+  "obsidian-git:commit-specified-message": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": "C"
+    }
+  ],
+  "obsidian-git:push2": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": "P"
+    }
+  ]
+}

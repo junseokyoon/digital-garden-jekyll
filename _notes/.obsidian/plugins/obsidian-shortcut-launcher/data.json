@@ -1,0 +1,20 @@
+{
+  "launchers": [
+    {
+      "commandName": "Checkor",
+      "shortcutName": "Checkor-Obsidian",
+      "inputTypes": [
+        "Selected Text"
+      ],
+      "separator": ","
+    },
+    {
+      "commandName": "Random Bear",
+      "shortcutName": "Get Random Bear Note",
+      "inputTypes": [
+        "Selected Text"
+      ],
+      "separator": ","
+    }
+  ]
+}
