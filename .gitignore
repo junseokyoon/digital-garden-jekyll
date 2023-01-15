@@ -15,4 +15,4 @@ _includes/notes_graph.json
 .DS_Store
 _notes/.DS_Store
 _notes/_staging/
-.obsidian/
+_notes/.obsidian/
