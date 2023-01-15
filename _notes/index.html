@@ -1,8 +1,6 @@
 ---
 ---
 
-<h1 class="post-title">All notes 📘</h1>
-
 {% include notes_graph.html %}
 
 <br>
@@ -14,7 +12,7 @@
   <div class="list-entry">
     <div><a class="internal-link" href="{{ entry.url }}">{{ entry.title }}</a> <span
         class="faded">({{ entry.last_modified_at | date: "%Y-%m-%d" }})</span></div>
-
+        <br>
   </div>
   {% endunless %}
   {% endfor %}
