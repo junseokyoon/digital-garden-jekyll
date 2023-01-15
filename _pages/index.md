@@ -5,18 +5,32 @@ id: home
 permalink: /
 ---
 
-# Welcome! 🌱
-
-<p style="padding: 3em 1em; background: #f5f7ff; border-radius: 4px;">
-  Take a look at <span style="font-weight: bold">[[Your first note]]</span> to get started on your exploration.
-</p>
-
-This digital garden template is free, open-source, and [available on GitHub here](https://github.com/maximevaillancourt/digital-garden-jekyll-template).
-
-The easiest way to get started is to read this [step-by-step guide explaining how to set this up from scratch](https://maximevaillancourt.com/blog/setting-up-your-own-digital-garden-with-jekyll).
-
 <style>
-  .wrapper {
-    max-width: 46em;
-  }
+.category-content a {
+    text-decoration: none;
+    color: #4183c4;
+}
+
+.category-content a:hover {
+    text-decoration: underline;
+    color: #4183c4;
+}
 </style>
+
+<main>
+    {% assign notes = site.notes | sort: 'date' | reverse %}
+    {% assign prevdate =  '0000-00-00' %}
+    {%- for note in notes -%}
+        {% assign date =  note.date | split: ' ' | first %}
+        {%- if date != prevdate -%}
+            <i>{{date}}</i>:
+        {%- endif -%}
+        {%- if note.tags contains 'index' -%}
+            <li style="padding-bottom: 0.6em; "><a href="{{note.url}}" style="color: #1DA1F2; font-weight:bold">{{ note.title }}</a></li>
+        {% else %}
+            <li style="padding-bottom: 0.6em; "><a href="{{note.url}}">{{ note.title }}</a></li>
+        {%- endif -%}        
+        {% assign prevdate =  note.date | split: ' ' | first %}
+    {%- endfor -%}
+    <br/>
+</main>
