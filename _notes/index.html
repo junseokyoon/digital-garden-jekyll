@@ -10,9 +10,8 @@
   {% for entry in notes %}
   {% unless entry.path contains "index.md" or entry.path contains "index.html" %}
   <div class="list-entry">
-    <div><a class="internal-link" href="{{ entry.url }}">{{ entry.title }}</a> <span
-        class="faded">({{ entry.last_modified_at | date: "%Y-%m-%d" }})</span></div>
-        <br>
+    <div><span class="faded">{{ entry.last_modified_at | date: "%Y-%m-%d" }}</span>
+        <a class="internal-link" href="{{ entry.url }}">{{ entry.title }}</a> </div>
   </div>
   {% endunless %}
   {% endfor %}
