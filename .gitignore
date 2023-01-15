@@ -14,3 +14,5 @@ _includes/notes_graph.json
 # Obsidian config
 .obsidian/
 /_staging/Readwise/**
+.DS_Store
+_notes/.DS_Store
